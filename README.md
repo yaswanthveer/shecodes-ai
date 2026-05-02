@@ -15,7 +15,7 @@ SheCodes.AI is an empathetic AI platform designed specifically for mothers who a
 
 - **Frontend**: Next.js 16 with React 19, TypeScript, Tailwind CSS
 - **Database**: IBM Cloudant (NoSQL)
-- **AI/ML**: Google Gemini AI (gemini-1.5-flash)
+- **AI/ML**: IBM Watsonx.ai
 - **State Management**: Zustand
 - **UI Components**: Radix UI, Framer Motion, Three.js
 
@@ -25,7 +25,7 @@ SheCodes.AI is an empathetic AI platform designed specifically for mothers who a
 
 - Node.js 20+
 - npm or yarn
-- Google Gemini API key
+- watsonx
 - IBM Cloud account (for Cloudant database)
 
 ### 1. Clone and Install
@@ -41,8 +41,7 @@ npm install
 Create a `.env.local` file with:
 
 ```bash
-# Google Gemini AI
-GEMINI_API_KEY=your-gemini-api-key
+
 
 # IBM Cloudant Database
 CLOUDANT_URL=https://your-instance.cloudantnosqldb.appdomain.cloud
@@ -78,7 +77,7 @@ hercomeback.ai/
 │   └── InlineAIChat.tsx # Inline chat component
 ├── lib/                 # Core libraries
 │   ├── cloudant/        # Cloudant database client
-│   └── gemini/          # Google Gemini AI client
+│   └── watsonx/
 └── public/              # Static assets
 ```
 
@@ -87,8 +86,7 @@ hercomeback.ai/
 Create a `.env.local` file with:
 
 ```bash
-# Google Gemini AI
-GEMINI_API_KEY=your-gemini-api-key
+
 
 # IBM Cloudant Database
 CLOUDANT_URL=https://your-instance.cloudantnosqldb.appdomain.cloud
@@ -187,8 +185,6 @@ npm run lint     # Run ESLint
 - Regular key rotation recommended
 
 ## 💰 Cost Management
-
-- **Google Gemini**: Free tier available with rate limits
 - **Cloudant Lite**: Free tier (1GB storage, 20 lookups/sec)
 - Monitor usage via respective dashboards
 
@@ -202,7 +198,7 @@ Private and confidential.
 
 ## 🆘 Support
 
-- Google AI Studio: https://aistudio.google.com/
+
 - IBM Cloud Support: https://cloud.ibm.com/unifiedsupport/supportcenter
 - Cloudant Docs: https://cloud.ibm.com/docs/Cloudant
 
