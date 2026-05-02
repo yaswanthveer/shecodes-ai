@@ -2,6 +2,7 @@
 @import "tailwindcss";
 
 :root {
+  /* Light Mode Colors */
   --bg-primary: #FFFAF7;
   --bg-secondary: #FFF5F0;
   --bg-tertiary: #F5EDE8;
@@ -40,6 +41,40 @@
   --radius-full: 9999px;
 
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Dark Mode Colors */
+.dark {
+  --bg-primary: #1A1625;
+  --bg-secondary: #221B2E;
+  --bg-tertiary: #2A2338;
+  --bg-glass: rgba(34, 27, 46, 0.75);
+  --bg-glass-strong: rgba(34, 27, 46, 0.92);
+
+  --text-primary: #F5F0F8;
+  --text-secondary: #B8A9C8;
+  --text-tertiary: #8C7A9C;
+
+  --border-color: rgba(184, 169, 200, 0.15);
+  --border-strong: rgba(184, 169, 200, 0.3);
+
+  --accent-rose: #D4A8E8;
+  --accent-pink: #F0BCC0;
+  --accent-gold: #E8C89A;
+  --accent-lavender: #C8B9E4;
+  --accent-sage: #B8D5B0;
+  --accent-blue: #8FB7DC;
+  --accent-coral: #F0A090;
+
+  --gradient-hero: linear-gradient(135deg, #221B2E 0%, #2D2440 30%, #352B4A 60%, #2A2338 100%);
+  --gradient-rose: linear-gradient(135deg, #D4A8E8, #B88FD8);
+  --gradient-warm: linear-gradient(135deg, #E8C89A, #F0BCC0);
+  --gradient-lavender: linear-gradient(135deg, #C8B9E4, #B8A9D4);
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.5);
+  --shadow-glow: 0 0 30px rgba(212,168,232,0.25);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -408,3 +443,20 @@ body {
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== THEME TOGGLE ===== */
+.theme-toggle-btn:hover {
+  transform: scale(1.05);
+  border-color: var(--accent-rose);
+  box-shadow: 0 4px 12px rgba(201,160,220,0.2);
+}
+
+/* ===== SMOOTH THEME TRANSITIONS ===== */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Prevent transition on page load */
+.no-transition * {
+  transition: none !important;
+}

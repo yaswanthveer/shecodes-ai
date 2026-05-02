@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const lifeChapters = [
   { id: "new-mum", label: "New Mum", emoji: "👶", desc: "0-12 months postpartum" },
@@ -83,6 +84,7 @@ export default function LandingPage() {
           {["Home", "Assess", "Dashboard", "Community"].map((item) => (
             <Link key={item} href={item === "Home" ? "/" : item === "Assess" ? "/assessment" : `/${item.toLowerCase()}`} style={{ textDecoration: "none", color: "inherit", transition: "color 0.2s" }}>{item}</Link>
           ))}
+          <ThemeToggle />
           <Link href="/assessment" className="btn-primary" style={{ padding: "10px 24px", fontSize: 14 }}>Start Free</Link>
         </div>
       </nav>
