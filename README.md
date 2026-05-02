@@ -9,7 +9,7 @@ SheCodes.AI is an empathetic AI platform designed specifically for mothers who a
 - Managing work-life balance
 - Seeking personal growth and wellness
 - Building meaningful relationships
-- Navigating life transitions
+- Navigating life transitions.
 
 ## 🏗️ Architecture
 
