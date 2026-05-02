@@ -1,4 +1,4 @@
-# IBM Cloud Integration Plan for Her.comeback.ai
+# IBM Cloud Integration Plan for SheCodes.AI
 
 ## Overview
 This document outlines the complete setup process for integrating IBM Cloud services (Cloudant NoSQL Database and watsonx.ai) with the Her platform - an AI companion for mothers navigating life transitions.

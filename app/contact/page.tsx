@@ -9,7 +9,7 @@ export default function ContactPage() {
     <div style={{ background: "var(--bg-primary)", minHeight: "100vh" }}>
       {/* MINIMAL NAVBAR */}
       <nav style={{ padding: "16px 40px", display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid var(--border-color)" }}>
-        <Link href="/" style={{ fontSize: 24, fontWeight: 700, letterSpacing: "-0.04em", textDecoration: "none", color: "var(--text-primary)" }}>Her.</Link>
+        <Link href="/" style={{ fontSize: 24, fontWeight: 700, letterSpacing: "-0.04em", textDecoration: "none", color: "var(--text-primary)" }}>SheCodes.AI</Link>
         <div style={{ display: "flex", gap: 32, alignItems: "center", fontSize: 14, fontWeight: 500, color: "var(--text-secondary)" }}>
           <Link href="/about" style={{ textDecoration: "none", color: "inherit" }}>About</Link>
           <Link href="/blog" style={{ textDecoration: "none", color: "inherit" }}>Stories</Link>

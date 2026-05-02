@@ -37,8 +37,8 @@ This guide will help you set up IBM watsonx.ai to enable real AI-powered respons
 2. Click **"New project"** button
 3. Select **"Create an empty project"**
 4. Fill in project details:
-   - **Name**: `Her AI Platform`
-   - **Description**: `AI companion for mothers - Her.comeback.ai`
+   - **Name**: `SheCodes AI Platform`
+   - **Description**: `AI companion for mothers - SheCodes.AI`
    - **Storage**: Select existing Cloud Object Storage or create new
 5. Click **"Create"**
 
@@ -111,21 +111,21 @@ ibmcloud plugin install machine-learning
 #### Step 4: Create Watson Machine Learning Instance
 ```bash
 # Create instance (Lite plan - free)
-ibmcloud resource service-instance-create her-watsonx-ml \
+ibmcloud resource service-instance-create shecodes-watsonx-ml \
   pm-20 lite us-south
 
 # Wait for provisioning
-ibmcloud resource service-instance her-watsonx-ml
+ibmcloud resource service-instance shecodes-watsonx-ml
 ```
 
 #### Step 5: Create Service Credentials
 ```bash
 # Create credentials
-ibmcloud resource service-key-create her-watsonx-credentials \
-  Manager --instance-name her-watsonx-ml
+ibmcloud resource service-key-create shecodes-watsonx-credentials \
+  Manager --instance-name shecodes-watsonx-ml
 
 # Get credentials
-ibmcloud resource service-key her-watsonx-credentials --output json
+ibmcloud resource service-key shecodes-watsonx-credentials --output json
 ```
 
 #### Step 6: Create Project via API
@@ -138,7 +138,7 @@ curl -X POST "https://api.dataplatform.cloud.ibm.com/v2/projects" \
   -H "Authorization: $TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
-    "name": "Her AI Platform",
+    "name": "SheCodes AI Platform",
     "description": "AI companion for mothers",
     "storage": {
       "type": "bmcos_object_storage",

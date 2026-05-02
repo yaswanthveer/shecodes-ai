@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Database Setup Script for Her.comeback.ai
+ * Database Setup Script for SheCodes.AI
  * Initializes all required Cloudant databases
  */
 

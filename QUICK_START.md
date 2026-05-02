@@ -52,14 +52,14 @@ ibmcloud resource service-instances --service-name pm-20
 
 **Cloudant:**
 ```bash
-ibmcloud resource service-instance-create her-cloudant-db cloudantnosqldb lite us-south
-ibmcloud resource service-key-create her-cloudant-credentials Manager --instance-name her-cloudant-db
-ibmcloud resource service-key her-cloudant-credentials --output json
+ibmcloud resource service-instance-create shecodes-cloudant-db cloudantnosqldb lite us-south
+ibmcloud resource service-key-create shecodes-cloudant-credentials Manager --instance-name shecodes-cloudant-db
+ibmcloud resource service-key shecodes-cloudant-credentials --output json
 ```
 
 **watsonx.ai:**
 - Go to https://dataplatform.cloud.ibm.com/
-- Create project → "Her AI Platform"
+- Create project → "SheCodes AI Platform"
 - Copy Project ID
 
 ### 6. Update `.env.local`
