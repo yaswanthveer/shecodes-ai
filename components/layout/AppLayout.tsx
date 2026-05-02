@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: "📊" },
@@ -88,6 +89,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
             <div className="badge" style={{ fontSize: 11 }}>✦ AI Ready</div>
+            <ThemeToggle />
             <div style={{
               width: 36, height: 36, borderRadius: "50%",
               background: "var(--gradient-rose)",
