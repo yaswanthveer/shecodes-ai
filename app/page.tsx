@@ -379,7 +379,7 @@ export default function LandingPage() {
         </div>
         <div style={{ maxWidth: 1000, margin: "32px auto 0", paddingTop: 24, borderTop: "1px solid var(--border-color)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div style={{ fontSize: 12, color: "var(--text-tertiary)" }}>© 2026 SheCodes.AI. All rights reserved.</div>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" height={20} style={{ opacity: 0.25 }} />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" style={{ height: '35px', opacity: 0.55 }} />
         </div>
       </footer>
     </div>
