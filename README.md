@@ -1,6 +1,6 @@
 # SheCodes.AI 🌸
 
-An AI-powered companion platform for mothers navigating life transitions, career comebacks, and personal growth. Built with Next.js, IBM Cloudant, and Google Gemini AI.
+An AI-powered companion platform for mothers navigating life transitions, career comebacks, and personal growth. Built with Next.js, IBM Cloudant, and IBM watsonx AI.
 
 ## 🎯 Overview
 
