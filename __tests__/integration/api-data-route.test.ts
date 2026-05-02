@@ -5,41 +5,17 @@
 
 import { POST } from '@/app/api/data/route';
 import { createMockRequest } from '../utils/test-helpers';
+import { mockUser, mockAssessment, mockJournal } from '../mocks/test-data';
 
 // Mock the Cloudant database functions
 jest.mock('@/lib/cloudant/db', () => ({
   initializeDatabases: jest.fn().mockResolvedValue(true),
   saveUser: jest.fn().mockResolvedValue(true),
-  getUser: jest.fn().mockResolvedValue({
-    _id: 'test_user_001',
-    email: 'test@example.com',
-    name: 'Test Mother',
-    mumType: 'returning_to_work',
-    createdAt: '2024-01-01T00:00:00.000Z',
-  }),
+  getUser: jest.fn().mockResolvedValue(mockUser),
   saveAssessment: jest.fn().mockResolvedValue(true),
-  getLatestAssessment: jest.fn().mockResolvedValue({
-    _id: 'assessment_001',
-    userId: 'test_user_001',
-    scores: {
-      health: 7,
-      mind: 6,
-      relationships: 8,
-      work: 5,
-      nourish: 7,
-    },
-    aiInsights: 'You are doing great! Focus on work-life balance.',
-    createdAt: '2024-01-01T00:00:00.000Z',
-  }),
+  getLatestAssessment: jest.fn().mockResolvedValue(mockAssessment),
   saveJournalEntry: jest.fn().mockResolvedValue(true),
-  getJournals: jest.fn().mockResolvedValue([{
-    _id: 'journal_001',
-    userId: 'test_user_001',
-    entry: 'Today was challenging but I managed to stay positive.',
-    mood: 7,
-    aiReflection: 'Your resilience is admirable. Keep focusing on the positive.',
-    createdAt: '2024-01-01T00:00:00.000Z',
-  }])
+  getJournals: jest.fn().mockResolvedValue([mockJournal])
 }));
 
 describe('/api/data Route - Integration Tests', () => {
