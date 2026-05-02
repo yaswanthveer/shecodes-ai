@@ -10,7 +10,14 @@
     "setup:db": "node scripts/setup-databases.js",
     "test:cloudant": "node scripts/test-cloudant.js",
     "test:ai": "node scripts/test-ai.js",
-    "test:gemini": "node scripts/test-gemini.js"
+    "test:gemini": "node scripts/test-gemini.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:unit": "jest __tests__/unit",
+    "test:integration": "jest __tests__/integration",
+    "test:verbose": "jest --verbose",
+    "test:ci": "jest --ci --coverage --maxWorkers=2"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -44,12 +51,16 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/jest": "^29.5.14",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "tailwindcss": "^4",
+    "ts-jest": "^29.4.9",
     "typescript": "^5"
   }
 }
