@@ -1,5 +1,6 @@
 
 
+
 # SheCodes.AI 🌸
 
 An AI-powered companion platform for mothers navigating life transitions, career comebacks, and personal growth. Built with Next.js, IBM Cloudant, and IBM watsonx AI.
@@ -210,3 +211,11 @@ Private and confidential.
 submission video
 
 https://drive.google.com/file/d/1beYrQGdSx1TEkpHN9S2qLEvYsCNj8SJe/view?usp=sharing
+
+IBM BOB REPORT
+
+<img width="1203" height="458" alt="Screenshot 2026-05-03 at 3 28 30 PM" src="https://github.com/user-attachments/assets/ef0a64ef-968d-43da-bf5b-e8e0d22c9303" />
+<img width="1190" height="370" alt="Screenshot 2026-05-03 at 3 28 15 PM" src="https://github.com/user-attachments/assets/5f97d531-dc12-41f5-bbd8-fe73daaba492" />
+<img width="1191" height="447" alt="Screenshot 2026-05-03 at 3 28 01 PM" src="https://github.com/user-attachments/assets/749fa5bd-aa3b-48cb-b196-9bf7b9cd2fc0" />
+<img width="1205" height="713" alt="Screenshot 2026-05-03 at 3 27 43 PM" src="https://github.com/user-attachments/assets/c9f6ec53-b165-4cf7-994e-d0814814ae5f" />
+<img width="1040" height="708" alt="Screenshot 2026-05-03 at 3 27 25 PM" src="https://github.com/user-attachments/assets/6b69f573-73ba-44a5-beb6-0e23e0842f7c" />
