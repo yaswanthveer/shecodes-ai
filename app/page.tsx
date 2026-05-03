@@ -33,21 +33,12 @@ export default function LandingPage() {
   const [scrolled, setScrolled] = useState(false);
   const [selectedChapter, setSelectedChapter] = useState("career");
   const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
-  const [counter, setCounter] = useState(12400);
   const [mobileMenu, setMobileMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Counter animation
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCounter(prev => prev + Math.floor(Math.random() * 3));
-    }, 4000);
-    return () => clearInterval(interval);
   }, []);
 
   // Scroll reveal observer
@@ -162,7 +153,7 @@ export default function LandingPage() {
           <div style={{ marginTop: 40, display: "flex", alignItems: "center", justifyContent: "center", gap: 8, animation: "fadeIn 1s ease-out 0.6s both" }}>
             <div style={{ width: 8, height: 8, borderRadius: "50%", background: "var(--accent-gold)", animation: "floatPulse 2s ease infinite" }} />
             <span style={{ fontSize: 14, color: "var(--text-secondary)", fontWeight: 500 }}>
-              {counter.toLocaleString()} mothers transformed this month
+              Join the movement — Your comeback starts here
             </span>
           </div>
         </div>
