@@ -1,3 +1,5 @@
+
+
 # SheCodes.AI 🌸
 
 An AI-powered companion platform for mothers navigating life transitions, career comebacks, and personal growth. Built with Next.js, IBM Cloudant, and IBM watsonx AI.
@@ -205,3 +207,6 @@ Private and confidential.
 ---
 
 **Built with ❤️ for mothers everywhere**
+submission video
+
+https://drive.google.com/file/d/1beYrQGdSx1TEkpHN9S2qLEvYsCNj8SJe/view?usp=sharing
