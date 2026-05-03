@@ -2,7 +2,7 @@
 
 ## 📋 Planning Phase Complete
 
-This document summarizes the planning work completed for integrating IBM Cloud services with Her.comeback.ai.
+This document summarizes the planning work completed for integrating IBM Cloud services with SheCodes.AI.
 
 ## ✅ Completed Planning Tasks
 

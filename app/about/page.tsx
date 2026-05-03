@@ -6,7 +6,7 @@ export default function AboutPage() {
     <div style={{ background: "var(--bg-primary)", minHeight: "100vh" }}>
       {/* MINIMAL NAVBAR */}
       <nav style={{ padding: "16px 40px", display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid var(--border-color)" }}>
-        <Link href="/" style={{ fontSize: 24, fontWeight: 700, letterSpacing: "-0.04em", textDecoration: "none", color: "var(--text-primary)" }}>Her.</Link>
+        <Link href="/" style={{ fontSize: 24, fontWeight: 700, letterSpacing: "-0.04em", textDecoration: "none", color: "var(--text-primary)" }}>SheCodes.AI</Link>
         <div style={{ display: "flex", gap: 32, alignItems: "center", fontSize: 14, fontWeight: 500, color: "var(--text-secondary)" }}>
           <Link href="/about" style={{ textDecoration: "none", color: "var(--text-primary)", fontWeight: 600 }}>About</Link>
           <Link href="/blog" style={{ textDecoration: "none", color: "inherit" }}>Stories</Link>
@@ -22,7 +22,7 @@ export default function AboutPage() {
         
         <div style={{ fontSize: 18, color: "var(--text-secondary)", lineHeight: 1.6, display: "flex", flexDirection: "column", gap: 24 }}>
           <p>
-            When we built Her., we looked at the landscape of tools available to mothers. We found endless trackers that caused anxiety, social feeds that induced guilt, and a total lack of tools to help women rebuild their professional identities.
+            When we built SheCodes.AI, we looked at the landscape of tools available to mothers. We found endless trackers that caused anxiety, social feeds that induced guilt, and a total lack of tools to help women rebuild their professional identities.
           </p>
           <p>
             We decided to change that. By integrating IBM watsonx and IBM Cloudant, we built a private, intelligent ecosystem. A place where you can safely brain-dump your exhaustion, where an AI can read your 3-year career gap and write a stunning resume summary, and where your data actually belongs to you.

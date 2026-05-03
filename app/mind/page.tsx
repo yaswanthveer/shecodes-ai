@@ -64,7 +64,7 @@ export default function MindPage() {
       <div style={{ maxWidth: 800, margin: "0 auto" }}>
         <div style={{ marginBottom: 32 }}>
           <div className="badge" style={{ marginBottom: 12 }}>🧠 Mind Module</div>
-          <h1 style={{ fontSize: 32, fontWeight: 700, letterSpacing: "-0.03em", marginBottom: 8 }}>Her Mind</h1>
+          <h1 style={{ fontSize: 32, fontWeight: 700, letterSpacing: "-0.03em", marginBottom: 8 }}>SheCodes Mind</h1>
           <p style={{ fontSize: 17, color: "var(--text-secondary)" }}>
             A secure space to unpack the invisible load. Processed by IBM watsonx.
           </p>

@@ -85,7 +85,7 @@ async function testCloudant() {
   const testDoc = {
     _id: 'test_' + Date.now(),
     type: 'test',
-    message: 'Hello from Her.comeback.ai'
+    message: 'Hello from SheCodes.AI'
   };
   
   await client.postDocument({
@@ -102,7 +102,7 @@ async function testCloudant() {
 import { generateText } from '../lib/watsonx/client';
 
 async function testWatsonx() {
-  const prompt = 'Hello, this is a test message for Her.comeback.ai';
+  const prompt = 'Hello, this is a test message for SheCodes.AI';
   const response = await generateText(prompt);
   
   console.log('Prompt:', prompt);
@@ -279,13 +279,13 @@ ibmcloud login --apikey ApiKey-ba67cf82-ab15-407a-818e-6999dbfeba72 -r us-south
 ibmcloud resource service-instances
 
 # 4. Create Cloudant (if needed)
-ibmcloud resource service-instance-create her-cloudant-db cloudantnosqldb lite us-south
+ibmcloud resource service-instance-create shecodes-cloudant-db cloudantnosqldb lite us-south
 
 # 5. Create credentials
-ibmcloud resource service-key-create her-cloudant-credentials Manager --instance-name her-cloudant-db
+ibmcloud resource service-key-create shecodes-cloudant-credentials Manager --instance-name shecodes-cloudant-db
 
 # 6. Get credentials
-ibmcloud resource service-key her-cloudant-credentials --output json
+ibmcloud resource service-key shecodes-cloudant-credentials --output json
 
 # 7. Install dependencies
 npm install tsx --save-dev

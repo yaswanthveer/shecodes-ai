@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 const assessmentSteps = [
-  { id: 1, title: "Welcome to Her.", question: "What is your name?", type: "text", key: "name" },
+  { id: 1, title: "Welcome to SheCodes.AI", question: "What is your name?", type: "text", key: "name" },
   { id: 2, title: "Your Season", question: "Which best describes your current season of motherhood?", type: "options", key: "mumType", options: ["New Mother (0-1 yr)", "Toddler Years (1-3 yrs)", "School Age (4+ yrs)", "Career Break", "Working Mother"] },
   { id: 3, title: "Mental Load", question: "How often do you feel overwhelmed by the invisible mental load?", type: "slider", key: "mind", min: 1, max: 10, leftLabel: "Rarely", rightLabel: "Constantly" },
   { id: 4, title: "Identity", question: "Do you feel connected to who you were before motherhood?", type: "slider", key: "identity", min: 1, max: 10, leftLabel: "Lost myself", rightLabel: "Fully connected" },
@@ -73,7 +73,7 @@ export default function AssessmentPage() {
     <div className="hero-bg" style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       {/* HEADER */}
       <header style={{ padding: "20px 40px", display: "flex", alignItems: "center", justifyContent: "space-between", background: "var(--bg-glass-strong)", backdropFilter: "blur(20px)", borderBottom: "1px solid var(--border-color)" }}>
-        <Link href="/" style={{ fontSize: 22, fontWeight: 800, textDecoration: "none", color: "var(--accent-rose)" }}>Her.</Link>
+        <Link href="/" style={{ fontSize: 22, fontWeight: 800, textDecoration: "none", color: "var(--accent-rose)" }}>SheCodes.AI</Link>
         <div style={{ width: 200, height: 4, background: "var(--bg-tertiary)", borderRadius: 2, overflow: "hidden" }}>
           <div style={{ width: `${progress}%`, height: "100%", background: "var(--gradient-rose)", transition: "width 0.4s ease" }} />
         </div>

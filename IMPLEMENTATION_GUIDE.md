@@ -79,18 +79,18 @@ ibmcloud resource service-instances --service-name pm-20
 
 ```bash
 # Create Cloudant instance (Lite plan - free)
-ibmcloud resource service-instance-create her-cloudant-db \
+ibmcloud resource service-instance-create shecodes-cloudant-db \
   cloudantnosqldb lite us-south
 
 # Wait for provisioning (check status)
-ibmcloud resource service-instance her-cloudant-db
+ibmcloud resource service-instance shecodes-cloudant-db
 
 # Create service credentials
-ibmcloud resource service-key-create her-cloudant-credentials \
-  Manager --instance-name her-cloudant-db
+ibmcloud resource service-key-create shecodes-cloudant-credentials \
+  Manager --instance-name shecodes-cloudant-db
 
 # Retrieve credentials
-ibmcloud resource service-key her-cloudant-credentials --output json
+ibmcloud resource service-key shecodes-cloudant-credentials --output json
 ```
 
 **Copy the following from the output:**
@@ -102,7 +102,7 @@ ibmcloud resource service-key her-cloudant-credentials --output json
 ### Option A: Using IBM Cloud Console (Recommended)
 1. Go to https://dataplatform.cloud.ibm.com/
 2. Click "Create a project" → "Create an empty project"
-3. Name it "Her AI Platform"
+3. Name it "SheCodes AI Platform"
 4. Note the Project ID from the project settings
 5. Update `WATSONX_PROJECT_ID` in `.env.local`
 
@@ -112,15 +112,15 @@ ibmcloud resource service-key her-cloudant-credentials --output json
 ibmcloud plugin install machine-learning
 
 # Create Watson Machine Learning instance
-ibmcloud resource service-instance-create her-watsonx-ml \
+ibmcloud resource service-instance-create shecodes-watsonx-ml \
   pm-20 lite us-south
 
 # Create service credentials
-ibmcloud resource service-key-create her-watsonx-credentials \
-  Manager --instance-name her-watsonx-ml
+ibmcloud resource service-key-create shecodes-watsonx-credentials \
+  Manager --instance-name shecodes-watsonx-ml
 
 # Retrieve credentials
-ibmcloud resource service-key her-watsonx-credentials --output json
+ibmcloud resource service-key shecodes-watsonx-credentials --output json
 ```
 
 **Update `.env.local`:**

@@ -89,7 +89,7 @@ export async function generateLifeAssessment(data: {
   scores: Record<string, number>;
   name: string;
 }): Promise<string> {
-  const prompt = `You are an empathetic AI companion for mothers named Her. A ${data.mumType} named ${data.name} has completed their life assessment with these scores (out of 10): ${JSON.stringify(data.scores)}. Write a warm, encouraging 3-sentence assessment that: 1) validates her current state, 2) identifies her top strength, 3) gives one gentle next step. Do not use clinical language. Sound like a wise, caring friend.`;
+  const prompt = `You are an empathetic AI companion for mothers named SheCodes.AI. A ${data.mumType} named ${data.name} has completed their life assessment with these scores (out of 10): ${JSON.stringify(data.scores)}. Write a warm, encouraging 3-sentence assessment that: 1) validates her current state, 2) identifies her top strength, 3) gives one gentle next step. Do not use clinical language. Sound like a wise, caring friend.`;
 
   return generateText(prompt, { maxTokens: 200, temperature: 0.8 });
 }
@@ -135,7 +135,7 @@ function getMockResponse(prompt: string): string {
   const lower = prompt.toLowerCase();
 
   if (lower.includes("assess") || lower.includes("life state")) {
-    return "You are doing so much more than you realise. The fact that you're here, seeking support and growth, already shows tremendous strength. Your journey of becoming again starts with this exact moment of courage — and Her. is with you every step of the way.";
+    return "You are doing so much more than you realise. The fact that you're here, seeking support and growth, already shows tremendous strength. Your journey of becoming again starts with this exact moment of courage — and SheCodes.AI is with you every step of the way.";
   }
 
   if (lower.includes("resume") || lower.includes("cv") || lower.includes("career")) {
@@ -150,5 +150,5 @@ function getMockResponse(prompt: string): string {
     return "Thank you for sharing that with me. What you're feeling is completely valid. You are not alone in this, and what you're carrying deserves to be acknowledged. Would you like to explore what's underneath this feeling together?";
   }
 
-  return "Her. AI is ready to help. Once you connect your IBM watsonx API key, you'll receive fully personalised, intelligent responses tailored to your unique journey.";
+  return "SheCodes.AI is ready to help. Once you connect your IBM watsonx API key, you'll receive fully personalised, intelligent responses tailored to your unique journey.";
 }
