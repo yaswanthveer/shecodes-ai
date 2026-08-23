@@ -1,0 +1,4 @@
+{
+  "name": "SheCodes AI",
+  "openapi": { "spec": "./openapi.yaml" }
+}
